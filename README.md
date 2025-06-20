@@ -1,4 +1,4 @@
-# ⏱ Stopwatch Web App
+#  Stopwatch Web App
 
 A functional stopwatch application created during my internship at **Prodigy Infotech**.
 
