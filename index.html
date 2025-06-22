@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Stopwatch</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <div class="stopwatch">
-        <div class="timerDisplay">00:00:00</div>
-      </div>
-      
-      <div class="functions">
-        <button id="stopBtn" class="button">Stop</button>
-        <button id="startBtn" class="button">Start</button>
-        <button id="resetBtn" class="button">Reset</button>
-      </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ultimate Stopwatch</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="stopwatch">
+    <div class="timerDisplay">00 : 00 : 00</div>
 
-      <!-- 🔗 Add JavaScript here -->
-      <script src="script.js"></script>
-  </body>
+    <div class="functions">
+      <button id="startBtn" class="button">Start</button>
+      <button id="stopBtn" class="button">Stop</button>
+      <button id="resetBtn" class="button">Reset</button>
+      <button id="lapBtn" class="button">Lap</button>
+    </div>
+
+    <div class="countdown-input functions">
+      <input type="number" id="countdownMinutes" placeholder="Minutes" min="0" />
+      <input type="number" id="countdownSeconds" placeholder="Seconds" min="0" max="59" />
+      <button id="startCountdown" class="button">Start Countdown</button>
+    </div>
+
+    <div class="laps functions">
+      <h3>Lap Times</h3>
+      <ul id="lapList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
