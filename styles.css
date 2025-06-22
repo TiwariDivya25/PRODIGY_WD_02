@@ -1,56 +1,72 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Times New Roman;
+  font-family: 'Orbitron', sans-serif;
 }
 
-body{
-  background-color: rgba(0,0,0,0.7);
+body {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
+  padding: 20px;
 }
 
-.stopwatch{
-  background-color: rgba(0,0,0,0.9);
-  padding: 20px 24px;
+.stopwatch {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 40px 50px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.timerDisplay {
+  font-size: 60px;
+  font-weight: bold;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+.functions {
+  margin-top: 30px;
+}
+
+.button {
+  font-size: 18px;
+  padding: 14px 28px;
+  margin: 0 10px;
+  border: none;
   border-radius: 10px;
-}
-
-.timerDisplay{
-  font-size: 50px;
-  font-weight: 600 ;
-}
-
-.functions{
-  margin-top: 20px;
-}
-
-.button{
-  font-size: 20px;
-  background: none;
-  border: solid;
-  border-color: rgba(0,0,0,0.9);
-  color: #fff;
-  background-color: var(--clr);
-  padding: 12px 24px;
-  margin-inline: 12px;
-  border-radius: 8px;
+  color: white;
   cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-#stopBtn{
-  background-color: #980002;
-  bo
-}
-#startBtn{
-  background-color:  #06402B;
-}
-#resetBtn{
-  background-color: #111184;
+#startBtn {
+  background-color: #04c45c;
 }
 
+#stopBtn {
+  background-color: #ff4c4c;
+}
+
+#resetBtn {
+  background-color: #4b6cff;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
