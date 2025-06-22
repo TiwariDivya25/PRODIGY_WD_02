@@ -13,7 +13,7 @@ A functional stopwatch application created during my internship at **Prodigy Inf
 - JavaScript
 
 ###  Live Demo:
-[View Live](https://yourusername.github.io/stopwatch-web-app)
+[View Live](https://tiwaridivya25.github.io/PRODIGY_WD_02/)
 
 ---
 
