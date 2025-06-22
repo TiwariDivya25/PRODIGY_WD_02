@@ -25,30 +25,20 @@ resetBtn.addEventListener("click", function(){
     timerDisplay.innerHTML = "00 : 00 : 00";
 })
 
-function startTimer(){
+function startTimer() {
     msec++;
-    if(msec == 100){
+    if (msec == 100) {
         msec = 0;
         secs++;
-        if(secs == 60){
+        if (secs == 60) {
             secs = 0;
             mins++;
-
         }
     }
-    
-    // let msecString;
-    // if(msec < 10){
-    //     msecString = "0${msec}";
-    // }
-    // else{
-    //     msecString = msec;
-    // }
 
-    let msecString = msec < 10 ? "0${msec}" : msec;
-    let secsString = secs < 10 ? "0${secs}" : secs;
-    let minsString = mins < 10 ? "0${mins}" : msec;
+    let msecString = msec < 10 ? `0${msec}` : msec;
+    let secsString = secs < 10 ? `0${secs}` : secs;
+    let minsString = mins < 10 ? `0${mins}` : mins;
 
-    timerDisplay.innerHTML = "${minsString} : ${secsString} : ${msecString}";
-
+    timerDisplay.innerHTML = `${minsString} : ${secsString} : ${msecString}`;
 }
