@@ -20,10 +20,15 @@ stopBtn.addEventListener("click", function(){
     clearInterval(timerId);
 })
 
-resetBtn.addEventListener("click", function(){
-    clearInterval(timerId);
-    timerDisplay.innerHTML = "00 : 00 : 00";
-})
+resetBtn.addEventListener("click", () => {
+  clearInterval(timerId);
+  timerId = null;  // Important: reset the interval reference
+  msec = 0;
+  secs = 0;
+  mins = 0;
+  timerDisplay.innerHTML = "00:00:00";
+});
+
 
 function startTimer() {
     msec++;
