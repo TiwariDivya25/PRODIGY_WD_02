@@ -16,3 +16,5 @@ A functional stopwatch application created during my internship at **Prodigy Inf
 [View Live](https://tiwaridivya25.github.io/Stopwatch-Web-App/)
 
 
+
+![image](https://github.com/user-attachments/assets/2a59772c-0655-47a1-b424-50971145e73b)
